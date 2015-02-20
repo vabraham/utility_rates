@@ -20,7 +20,7 @@ content(sample2)
 key <- "sample_key1"
 lat <- 37.778462
 lon <- -122.411593
-sample2 = GET("http://api.data.gov/nrel/utility_rates/v3.json", query = list(api_key = key, lat = lat, lon = lon))
+sample2 <- GET("http://api.data.gov/nrel/utility_rates/v3.json", query = list(api_key = key, lat = lat, lon = lon))
 content(sample2)
 
 # Combining both the Google Maps API and the Data.gov API to get utility rates by city
