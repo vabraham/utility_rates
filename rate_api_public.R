@@ -20,7 +20,7 @@ content(sample2)
 # Or
 key <- "sample_key"
 add1 <- "1600 Amphitheatre Parkway, Mountain View, CA"
-sample2 = GET("http://api.data.gov/nrel/utility_rates/v3.json", query = list(api_key = key, address = add1))
+sample2 <- GET("http://api.data.gov/nrel/utility_rates/v3.json", query = list(api_key = key, address = add1))
 result2 <- content(sample2)
 result2$outputs$utility_info[[1]]$utility_name
 result2$outputs$residential
